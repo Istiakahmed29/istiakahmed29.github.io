@@ -85,6 +85,8 @@ header.scrolled{box-shadow:0 2px 18px rgba(7,90,174,.10)}
 /* ---------- work ---------- */
 #work{background:var(--white)}
 .featured{display:grid;grid-template-columns:1.05fr 1fr;background:var(--pale);border-radius:8px;overflow:hidden;margin-bottom:32px}
+.featured.flip{direction:rtl}
+.featured.flip>*{direction:ltr}
 .featured .ph{position:relative;min-height:340px}
 .featured .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .tint{position:relative}
@@ -93,7 +95,7 @@ header.scrolled{box-shadow:0 2px 18px rgba(7,90,174,.10)}
 .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
 .featured h3,.workcard h3{font-family:var(--serif);font-weight:400;font-size:24px;color:var(--ink);margin-bottom:12px}
 .featured p{font-size:15px;margin-bottom:26px}
-.workgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.workgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
 .workcard{border:1px solid var(--line);border-radius:8px;padding:36px 32px;background:#fff;transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
 .workcard:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(7,90,174,.12)}
 .workcard p{font-size:14.5px;flex:1;margin-bottom:22px}
@@ -264,6 +266,15 @@ footer a{color:var(--blue)}
         <div><a class="btn btn-blue btn-sm" href="files/botiaghata-project.pdf" target="_blank" rel="noopener">View report (PDF)</a></div>
       </div>
     </div>
+    <div class="featured reveal flip">
+      <div class="ph tint"><img src="assets/480ed892-30cc-4ddc-9bb0-41f64f9f462f.png" alt="Group photo at Sheraton Dhaka — The Garden Kitchen" loading="lazy"></div>
+      <div class="tx">
+        <span class="tag">Industrial visit</span>
+        <h3>Sheraton Dhaka</h3>
+        <p>Inside a five-star operation — departments, service standards and guest experience, documented during an industrial visit to Sheraton Dhaka.</p>
+        <div><a class="btn btn-blue btn-sm" href="files/sheraton-report.pdf" target="_blank" rel="noopener">View report (PDF)</a></div>
+      </div>
+    </div>
     <div class="workgrid">
       <div class="workcard reveal">
         <span class="tag">Internship report</span>
@@ -272,12 +283,6 @@ footer a{color:var(--blue)}
         <a class="link" href="files/digital-marketing-report.pdf" target="_blank" rel="noopener">View report (PDF) →</a>
       </div>
       <div class="workcard reveal" data-d="1">
-        <span class="tag">Industrial visit</span>
-        <h3>Sheraton Dhaka</h3>
-        <p>Inside a five-star operation — departments, service standards and guest experience, documented during an industrial visit to Sheraton Dhaka.</p>
-        <a class="link" href="files/sheraton-report.pdf" target="_blank" rel="noopener">View report (PDF) →</a>
-      </div>
-      <div class="workcard reveal" data-d="2">
         <span class="tag">Data analysis</span>
         <h3>YSSE Attendance Analytics</h3>
         <p>An 11-tab Excel analysis of intern attendance — patterns, trends and reporting built with advanced formulas during my YSSE internship.</p>
