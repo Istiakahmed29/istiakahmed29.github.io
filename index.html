@@ -47,7 +47,7 @@ header.scrolled{box-shadow:0 2px 18px rgba(7,90,174,.10)}
 .hamburger span{display:block;width:26px;height:2.5px;background:var(--ink);margin:5px 0;border-radius:2px;transition:.3s}
 /* ---------- hero ---------- */
 .hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;padding:150px 0 110px;overflow:hidden;background:var(--blue)}
-.hero-bg{position:absolute;inset:0;background:url('assets/4955041e-2172-40fc-82b9-5d54f5909706.jpg') center 38%/cover no-repeat;transform:scale(1.02)}
+.hero-bg{position:absolute;inset:0;background:url('assets/400be1e1-fbc2-40f8-b170-c0465b17871b.jpg') center 22%/cover no-repeat;transform:scale(1.02)}
 .hero-veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(6,58,112,.88) 0%,rgba(7,90,174,.62) 55%,rgba(7,90,174,.38) 100%)}
 .hero-inner{position:relative;z-index:2;max-width:640px}
 .eyebrow{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#fff;opacity:.85;margin-bottom:20px}
@@ -97,14 +97,10 @@ header.scrolled{box-shadow:0 2px 18px rgba(7,90,174,.10)}
 .workcard a.link{color:var(--blue);font-weight:500;font-size:14.5px}
 .workcard a.link:hover{text-decoration:underline}
 /* ---------- stats band ---------- */
-.band{background:var(--blue);color:#fff;padding:0;overflow:hidden}
-.band-grid{display:grid;grid-template-columns:1fr 1.2fr;align-items:stretch}
-.band .ph{position:relative;min-height:380px}
-.band .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
-.band .tx{padding:84px 20px 84px 72px;display:flex;flex-direction:column;justify-content:center}
-.band h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.2vw,36px);color:#fff;margin-bottom:34px}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:34px 30px}
-.stat b{display:block;font-family:var(--serif);font-weight:300;font-size:44px;line-height:1;color:#fff}
+.band{background:var(--blue);color:#fff;padding:88px 0;text-align:center}
+.band h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.2vw,36px);color:#fff;margin-bottom:44px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:34px;max-width:980px;margin:0 auto}
+.stat b{display:block;font-family:var(--serif);font-weight:300;font-size:46px;line-height:1;color:#fff}
 .stat span{font-size:14px;color:rgba(255,255,255,.82)}
 /* ---------- story ---------- */
 .story-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
@@ -155,16 +151,14 @@ footer a{color:var(--blue)}
   .featured{grid-template-columns:1fr}
   .featured .ph{min-height:240px}
   .workgrid{grid-template-columns:1fr}
-  .band-grid{grid-template-columns:1fr}
-  .band .ph{min-height:260px}
-  .band .tx{padding:56px 24px}
+  .band .stats{grid-template-columns:1fr 1fr}
   .story-grid{grid-template-columns:1fr;gap:44px}
   .story-grid .ph img{height:420px}
   .edu2{grid-template-columns:1fr}
   .cgrid{grid-template-columns:1fr 1fr}
   section{padding:72px 0}
 }
-@media(max-width:560px){.cgrid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.cgrid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
@@ -291,17 +285,14 @@ footer a{color:var(--blue)}
 </section>
 
 <section class="band">
-  <div class="band-grid">
-    <div class="ph tint"><img src="assets/400be1e1-fbc2-40f8-b170-c0465b17871b.jpg" alt="Istiak Ahmed Badhon" loading="lazy"></div>
-    <div class="tx">
-      <div class="reveal">
-        <h2>By the numbers</h2>
-        <div class="stats">
-          <div class="stat"><b data-count="4">0</b><span>Featured projects &amp; reports</span></div>
-          <div class="stat"><b data-count="3">0</b><span>Professional roles &amp; internships</span></div>
-          <div class="stat"><b data-count="3">0</b><span>Professional certifications</span></div>
-          <div class="stat"><b data-count="3.54" data-dec="2">0</b><span>BBA CGPA, GSTU</span></div>
-        </div>
+  <div class="container">
+    <div class="reveal">
+      <h2>By the numbers</h2>
+      <div class="stats">
+        <div class="stat"><b data-count="4">0</b><span>Featured projects &amp; reports</span></div>
+        <div class="stat"><b data-count="3">0</b><span>Professional roles &amp; internships</span></div>
+        <div class="stat"><b data-count="3">0</b><span>Professional certifications</span></div>
+        <div class="stat"><b data-count="3.54" data-dec="2">0</b><span>BBA CGPA, GSTU</span></div>
       </div>
     </div>
   </div>
